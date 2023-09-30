@@ -29,6 +29,12 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH &kp SPACE &sk LEFT_SHIFT>;
         };
+        lgsw: lgsw {
+            compatible = "zmk,behavior-macro";
+            label = "LGSW";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_WIN &kp SPACE>;
+        };
     };
 
     keymap {
@@ -36,21 +42,21 @@
 
         default_layer {
             bindings = <
-  &kp ESCAPE  &kp N1  &kp N2    &kp N3     &kp N4           &kp N5       &tochka    &kp N7         &kp N8     &kp N9                  &kp N0    &kp MINUS
-  &kp GRAVE   &kp Q   &kp W     &kp E      &kp R            &kp T        &kp Y      &kp U          &kp I      &kp O                   &kp P     &kp LBKT
-  &kp LCTRL   &kp A   &kp S     &kp D      &kp F            &kp G        &kp H      &kp J          &kp K      &kp L                   &kp SEMI  &mt RCTRL SQT
-  &kp LALT    &kp Z   &kp X     &kp C      &kp V            &kp B        &kp N      &kp M          &kp COMMA  &kp DOT                 &kp FSLH  &mt RALT BSLH
-                      &kp LGUI  &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET    &lt 1 ESC  &kp BACKSPACE  &lt 2 DEL  &mt RGUI RIGHT_BRACKET
+  &kp ESCAPE  &kp N1  &kp N2    &kp N3     &kp N4           &kp N5         &tochka      &kp N7         &kp N8     &kp N9                  &kp N0    &kp MINUS
+  &kp GRAVE   &kp Q   &kp W     &kp E      &kp R            &kp T          &kp Y        &kp U          &kp I      &kp O                   &kp P     &kp LBKT
+  &kp LCTRL   &kp A   &kp S     &kp D      &kp F            &kp G          &kp H        &kp J          &kp K      &kp L                   &kp SEMI  &mt RCTRL SQT
+  &kp LALT    &kp Z   &kp X     &kp C      &kp V            &kp B          &kp N        &kp M          &kp COMMA  &kp DOT                 &kp FSLH  &mt RALT BSLH
+                      &kp LGUI  &lt 2 TAB  &mt LSHFT SPACE  &lt 1 SPACE    &lt 1 ENTER  &kp BACKSPACE  &lt 2 DEL  &mt RGUI RIGHT_BRACKET
             >;
         };
 
         lower_layer {
             bindings = <
-  &trans          &trans    &trans  &trans     &trans    &trans       &trans     &trans    &trans     &trans    &trans    &trans
-  &kp UNDER       &kp F1    &kp F2  &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
-  &mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-  &mt LALT EQUAL  &kp N1    &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-                            &trans  &lt 3 TAB  &trans    &trans       &trans     &trans    &lt 3 DEL  &trans
+  &trans          &kp F1     &kp F2    &kp F3            &kp F4            &kp F5        &kp F6    &kp F7   &kp F8    &kp F9  &kp F10    &kp F11
+  &kp UNDER       &kp CARET  &kp AMPS  &kp STAR          &kp LPAR          &kp RPAR      &kp STAR  &kp N7   &kp N8    &kp N9  &kp MINUS  &kp F12
+  &mt LCTRL PLUS  &kp EXCL   &kp EXCL  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp LS(N7)    &kp FSLH  &kp N4   &kp N5    &kp N6  &kp EQUAL  &mt RCTRL MINUS
+  &mt LALT EQUAL  &trans     &kp HASH  &kp AT            &kp DLLR          &lgsw         &kp DOT   &kp N1   &kp N2    &kp N3  &kp PLUS   &trans
+                             &trans    &lt 3 TAB         &trans            &trans        &trans    &kp DEL  &lt 3 N0  &trans
             >;
         };
 

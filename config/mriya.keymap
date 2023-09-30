@@ -35,6 +35,18 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_WIN &kp SPACE>;
         };
+        pvu: pvu {
+            compatible = "zmk,behavior-macro";
+            label = "PVU";
+            #binding-cells = <0>;
+            bindings = <&kp LS(C) &kp F &kp V &kp S &kp Q &kp G &kp H &kp J &kp C &kp N &kp J &kp Q &kp G &kp F &kp H &kp J &kp K &kp M &kp N2 &kp N0>;
+        };
+        vu: vu {
+            compatible = "zmk,behavior-macro";
+            label = "VU";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp T &kp B &kp N7 &kp N0 &kp N1 &kp N5 &kp N3 &kp N0 &kp N4 &kp N7>;
+        };
     };
 
     keymap {
@@ -54,7 +66,7 @@
             bindings = <
   &trans          &kp F1     &kp F2    &kp F3            &kp F4            &kp F5        &kp F6           &kp F7   &kp F8    &kp F9  &kp F10       &kp F11
   &kp UNDER       &kp CARET  &kp AMPS  &kp STAR          &kp LPAR          &kp RPAR      &kp KP_MULTIPLY  &kp N7   &kp N8    &kp N9  &kp KP_MINUS  &kp F12
-  &mt LCTRL PLUS  &kp EXCL   &kp EXCL  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp LS(N7)    &kp KP_SLASH     &kp N4   &kp N5    &kp N6  &kp KP_EQUAL  &mt RCTRL MINUS
+  &mt LCTRL PLUS  &kp EXCL   &kp EXCL  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp LS(N7)    &kp KP_SLASH     &kp N4   &kp N5    &kp N6  &kp KP_PLUS   &mt RCTRL MINUS
   &mt LALT EQUAL  &trans     &kp HASH  &kp AT            &kp DLLR          &lgsw         &kp KP_DOT       &kp N1   &kp N2    &kp N3  &kp EQUAL     &trans
                              &trans    &lt 3 TAB         &trans            &trans        &trans           &kp DEL  &lt 3 N0  &trans
             >;
@@ -62,7 +74,7 @@
 
         raise_layer {
             bindings = <
-  &trans           &trans           &trans     &trans     &trans     &trans          &trans        &trans    &trans     &trans     &trans           &trans
+  &trans           &trans           &trans     &trans     &trans     &trans          &vu           &trans    &trans     &trans     &trans           &pvu
   &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS
   &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
   &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans

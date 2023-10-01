@@ -75,7 +75,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
         };
         kp_zap: kp_zap {
             compatible = "zmk,behavior-hold-tap";
@@ -86,7 +86,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 

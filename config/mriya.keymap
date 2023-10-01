@@ -98,13 +98,13 @@
             key-positions = <19 20>;
             slow-release;
             layers = <0>;
-            timeout-ms = <50>;
+            timeout-ms = <10>;
         };
 
         rus_tvdrzn {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
-            timeout-ms = <50>;
+            timeout-ms = <10>;
             layers = <0>;
             slow-release;
         };
@@ -112,6 +112,9 @@
         rus_ee {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <43 44>;
+            slow-release;
+            timeout-ms = <10>;
+            layers = <0>;
         };
     };
 

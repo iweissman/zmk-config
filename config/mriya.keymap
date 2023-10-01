@@ -77,11 +77,11 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
         };
-        lt_zap: lt_zap {
+        kp_zap: kp_zap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_ZAP";
+            label = "KP_ZAP";
             bindings =
-                <&lt>,
+                <&kp>,
                 <&zap>;
 
             #binding-cells = <2>;
@@ -99,7 +99,7 @@
   &kp GRAVE                       &kp Q   &kp W     &kp E      &kp R                   &kp T          &kp Y        &kp U          &kp I            &kp O                   &kp P     &kp LBKT
   &skmod RIGHT_SHIFT RIGHT_SHIFT  &kp A   &kp S     &kp D      &kp F                   &kp G          &kp H        &kp J          &kp K            &kp L                   &kp SEMI  &mt RCTRL SQT
   &kp LALT                        &kp Z   &kp X     &kp C      &kp V                   &kp B          &kp N        &kp M          &kp COMMA        &kp DOT                 &kp FSLH  &mt RALT BSLH
-                                          &kp LGUI  &lt 2 TAB  &mt LEFT_CONTROL SPACE  &lt_zap 1 0    &lt 1 ENTER  &kp BACKSPACE  &lt_tonchka 2 0  &mt RGUI RIGHT_BRACKET
+                                          &kp LGUI  &lt 2 TAB  &kp_zap LEFT_CONTROL 0  &lt 1 SPACE    &lt 1 ENTER  &kp BACKSPACE  &lt_tonchka 2 0  &mt RGUI RIGHT_BRACKET
             >;
         };
 

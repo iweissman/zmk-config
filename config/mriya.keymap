@@ -94,21 +94,21 @@
         compatible = "zmk,combos";
 
         rus_h {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LBKT>;
             key-positions = <19 20>;
             layers = <0>;
             timeout-ms = <25>;
         };
 
         rus_tvdrzn {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RBKT>;
             key-positions = <31 32>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
         rus_ee {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp APOS>;
             key-positions = <43 44>;
             timeout-ms = <25>;
             layers = <0>;

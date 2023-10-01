@@ -90,6 +90,31 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        rus_h {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <19 20>;
+            slow-release;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        rus_tvdrzn {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <31 32>;
+            timeout-ms = <50>;
+            layers = <0>;
+            slow-release;
+        };
+
+        rus_ee {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <43 44>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

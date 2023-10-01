@@ -95,21 +95,21 @@
 
         rus_h {
             bindings = <&kp LBKT>;
-            key-positions = <19 20>;
+            key-positions = <31 32>;
             layers = <0>;
             timeout-ms = <25>;
         };
 
         rus_tvdrzn {
             bindings = <&kp RBKT>;
-            key-positions = <31 32>;
+            key-positions = <43 44>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
         rus_ee {
             bindings = <&kp APOS>;
-            key-positions = <43 44>;
+            key-positions = <28 27>;
             timeout-ms = <25>;
             layers = <0>;
         };

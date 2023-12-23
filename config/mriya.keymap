@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-macro";
             label = "PVU";
             #binding-cells = <0>;
-            bindings = <&kp LS(C) &kp F &kp V &kp S &kp Q &kp G &kp H &kp J &kp C &kp N &kp J &kp Q &kp G &kp F &kp H &kp J &kp K &kp M &kp N2 &kp N0>;
+            bindings = <&kp LS(G) &kp H &kp J &kp C &kp N &kp J &kp Q &kp G &kp F &kp H &kp J &kp K &kp M &kp N3 &kp N1>;
         };
 
         vu: vu {
@@ -61,7 +61,7 @@
         pvdd: pvdd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(C) &kp F &kp V &kp S &kp Q &kp N2 &kp N0 &kp EXCL>;
+            bindings = <&kp LS(G) &kp H &kp J &kp C &kp N &kp J &kp Q &kp N3 &kp N1 &kp EXCL>;
             label = "PVDD";
         };
     };

@@ -29,30 +29,35 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH &kp SPACE &sk LEFT_SHIFT>;
         };
+
         lgsw: lgsw {
             compatible = "zmk,behavior-macro";
             label = "LGSW";
             #binding-cells = <0>;
             bindings = <&sk LEFT_WIN &kp SPACE>;
         };
+
         pvu: pvu {
             compatible = "zmk,behavior-macro";
             label = "PVU";
             #binding-cells = <0>;
             bindings = <&kp LS(C) &kp F &kp V &kp S &kp Q &kp G &kp H &kp J &kp C &kp N &kp J &kp Q &kp G &kp F &kp H &kp J &kp K &kp M &kp N2 &kp N0>;
         };
+
         vu: vu {
             compatible = "zmk,behavior-macro";
             label = "VU";
             #binding-cells = <0>;
             bindings = <&kp V &kp T &kp B &kp N7 &kp N0 &kp N1 &kp N5 &kp N3 &kp N0 &kp N4 &kp N7>;
         };
+
         zap: zap {
             compatible = "zmk,behavior-macro";
             label = "ZAP";
             #binding-cells = <0>;
             bindings = <&kp LS(FSLH) &kp SPACE>;
         };
+
         pvdd: pvdd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -70,6 +75,7 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&sk>;
         };
+
         lt_tonchka: lt_tonchka {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_TONCHKA";
@@ -79,6 +85,7 @@
             tapping-term-ms = <1000>;
             flavor = "tap-preferred";
         };
+
         kp_zap: kp_zap {
             compatible = "zmk,behavior-hold-tap";
             label = "KP_ZAP";
@@ -120,7 +127,7 @@
 
         default_layer {
             bindings = <
-  &mt TAB ESC                     &kp N1  &kp N2    &kp N3     &kp N4                  &trans         &trans       &kp N7         &kp N8           &kp N9                  &kp N0    &kp MINUS
+  &mt TAB ESC                     &kp N1  &kp N2    &kp N3     &kp N4                  &kp N5         &trans       &kp N7         &kp N8           &kp N9                  &kp N0    &kp MINUS
   &kp GRAVE                       &kp Q   &kp W     &kp E      &kp R                   &kp T          &kp Y        &kp U          &kp I            &kp O                   &kp P     &kp LBKT
   &skmod RIGHT_SHIFT RIGHT_SHIFT  &kp A   &kp S     &kp D      &kp F                   &kp G          &kp H        &kp J          &kp K            &kp L                   &kp SEMI  &skmod RIGHT_CONTROL LEFT_SHIFT
   &kp LALT                        &kp Z   &kp X     &kp C      &kp V                   &kp B          &kp N        &kp M          &kp COMMA        &kp DOT                 &kp FSLH  &mt RALT BSLH

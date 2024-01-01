@@ -68,9 +68,9 @@
         klagonc_next: klagonc_next {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT) &kp LC(ENTER)>;
+            bindings = <&kp LC(RIGHT)>, <&macro_wait_time 250>, <&kp LC(ENTER)>;
+
             label = "KLAGONC_NEXT";
-            wait-ms = <200>;
         };
     };
 

@@ -13,13 +13,9 @@
 #define RSE 2
 #define ADJ 3
 
-&lt {
-    quick_tap_ms = <200>;
-};
+&lt { quick_tap_ms = <200>; };
 
-&mt {
-    quick_tap_ms = <200>;
-};
+&mt { quick_tap_ms = <200>; };
 
 / {
     macros {
@@ -135,6 +131,12 @@
             layers = <0>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
+        };
+
+        tire {
+            bindings = <&kp MINUS>;
+            key-positions = <39 40>;
+            layers = <0>;
         };
     };
 

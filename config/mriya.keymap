@@ -158,7 +158,7 @@
   &kp SLASH            &kp F1     &kp F2    &kp F3            &kp F4            &kp F5        &kp F6           &kp F7   &kp F8    &kp F9  &kp F10       &kp F11
   &kp UNDER            &kp CARET  &kp AMPS  &kp STAR          &kp LPAR          &kp RPAR      &kp KP_MULTIPLY  &kp N7   &kp N8    &kp N9  &kp KP_MINUS  &kp F12
   &mt LEFT_SHIFT PLUS  &kp MINUS  &kp EXCL  &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &kp LS(N7)    &kp KP_SLASH     &kp N4   &kp N5    &kp N6  &kp KP_PLUS   &mt RCTRL MINUS
-  &mt LALT EQUAL       &trans     &kp HASH  &kp AT            &mkp MB2          &mkp MB1      &kp KP_DOT       &kp N1   &kp N2    &kp N3  &kp EQUAL     &trans
+  &mt LALT EQUAL       &trans     &kp HASH  &kp AT            &trans            &trans        &kp KP_DOT       &kp N1   &kp N2    &kp N3  &kp EQUAL     &trans
                                   &trans    &lt 3 TAB         &trans            &trans        &trans           &kp DEL  &lt 3 N0  &trans
             >;
         };

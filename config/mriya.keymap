@@ -131,18 +131,18 @@
             layers = <0>;
         };
 
-        dvoet {
-            bindings = <&kp SEMI>;
+        tchszp {
+            bindings = <&kp DOLLAR>;
             key-positions = <14 15>;
         };
 
-        sddd {
-            bindings = <&kp COLON>;
+        dvth {
+            bindings = <&kp LCTRL>;
             key-positions = <16 14>;
         };
 
         vpr {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp AMPERSAND>;
             key-positions = <26 28>;
         };
 
@@ -152,7 +152,7 @@
         };
 
         ap {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp AT_SIGN>;
             key-positions = <26 27>;
         };
     };

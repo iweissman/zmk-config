@@ -137,7 +137,7 @@
         };
 
         dvth {
-            bindings = <&kp LCTRL>;
+            bindings = <&kp LS(NUMBER_6)>;
             key-positions = <16 14>;
         };
 

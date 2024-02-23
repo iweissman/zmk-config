@@ -17,6 +17,11 @@
 
 &mt { quick_tap_ms = <200>; };
 
+&sk {
+    quick-release;
+    release-after-ms = <500>;
+};
+
 / {
     macros {
         tochka: tochka {

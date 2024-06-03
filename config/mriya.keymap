@@ -18,6 +18,38 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        rus_h {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <19 20>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        rus_tvd {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <31 32>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        rus_ee {
+            bindings = <&kp SQT>;
+            key-positions = <7 8>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        tire {
+            bindings = <&kp MINUS>;
+            key-positions = <3 4>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

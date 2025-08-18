@@ -42,7 +42,7 @@
             compatible = "zmk,behavior-macro";
             label = "PVU";
             #binding-cells = <0>;
-            bindings = <&kp LS(G) &kp H &kp J &kp C &kp N &kp J &kp Q &kp G &kp F &kp H &kp J &kp K &kp M &kp N3 &kp N1>;
+            bindings = <&kp LS(G) &kp H &kp J &kp C &kp N &kp J &kp Q &kp G &kp F &kp H &kp J &kp K &kp M &kp N6 &kp N8 &kp EXCLAMATION>;
         };
 
         vu: vu {
